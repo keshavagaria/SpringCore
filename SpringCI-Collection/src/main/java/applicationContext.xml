@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xmlns="http://www.springframework.org/schema/beans">
+
+<!-- <bean id="triangle" class="com.csi.list.Triangle">
+<constructor-arg value="100" type="int"></constructor-arg>
+<constructor-arg>
+<list>
+<value>Equilateral</value>
+<value>Isosceles</value>
+<value>Right Angled</value>
+<value>Scalene</value>
+</list>
+</constructor-arg>
+</bean> -->
+
+<!-- <bean id="triangle2" class="com.csi.set.Triangle2">
+<constructor-arg value="10" type="int"></constructor-arg>
+
+<constructor-arg>
+<set>
+<value>Equilateral</value>
+<value>Right Angled</value>
+<value>Isosceles</value>
+<value>Scalene</value>
+</set>
+</constructor-arg>
+</bean> -->
+
+<!-- <bean id="triangle3" class="com.csi.map.Triangle3">
+<constructor-arg value="100" type="int"></constructor-arg>
+<constructor-arg value="200" type="int"></constructor-arg>
+<constructor-arg>
+<map>
+<entry key="101" value="Equilateral"></entry>
+<entry key="102" value="Right Angled"></entry>
+<entry key="103" value="Isosceles"></entry>
+<entry key="104" value="Scalene"></entry>
+</map>
+</constructor-arg>
+</bean> -->
+
+<bean id="triangle4" class="com.csi.properties.Triangle4">
+<constructor-arg value="420" type="int"></constructor-arg>
+<constructor-arg>
+<props>
+<prop key="one">Equilateral</prop>
+<prop key="two">Right Angled</prop>
+<prop key="three">Isosceles</prop>
+<prop key="one">Scalene</prop>
+
+</props>
+</constructor-arg>
+</bean>
+</beans>
