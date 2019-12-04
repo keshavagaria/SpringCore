@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xmlns="http://www.springframework.org/schema/beans">
+ <bean id="triangle" class="com.csi.list.Triangle">
+ <constructor-arg value="500" type="int"></constructor-arg>
+ <constructor-arg value="Euilateral" type="String"></constructor-arg>
+ <constructor-arg>
+ <list>
+ <ref bean="A"></ref>
+ <ref bean="B"></ref>
+ <ref bean="C"></ref>
+ 
+ </list>
+ </constructor-arg>
+ </bean>
+         <bean id="A" class="com.csi.list.Point">
+<constructor-arg value="100" type="int"></constructor-arg>
+<constructor-arg value="200" type="int"></constructor-arg>
+</bean>
+
+<bean id="B" class="com.csi.list.Point">
+<constructor-arg value="-100" type="int"></constructor-arg>
+<constructor-arg value="-200" type="int"></constructor-arg>
+</bean>
+
+<bean id="C" class="com.csi.list.Point">
+<constructor-arg value="500" type="int"></constructor-arg>
+<constructor-arg value="600" type="int"></constructor-arg>
+</bean>
+ </beans>
