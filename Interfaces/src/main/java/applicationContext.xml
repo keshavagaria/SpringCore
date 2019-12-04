@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xmlns="http://www.springframework.org/schema/beans">
+
+<bean id="circle" class="com.csi.spring.Circle">
+<property name="pointA" ref="firstPoint"></property>
+<property name="pointB" ref="secondPoint"></property>
+</bean>
+
+<bean id="triangle" class="com.csi.spring.Triangle">
+<property name="pointA" ref="firstPoint"></property>
+<property name="pointB" ref="secondPoint"></property>
+<property name="pointC" ref="thirdPoint"></property>
+</bean>
+
+<bean id="firstPoint" class="com.csi.spring.Point">
+<property name="x" value="100"></property>
+<property name="y" value="500"></property>
+</bean>
+
+<bean id="secondPoint" class="com.csi.spring.Point">
+<property name="x" value="10"></property>
+<property name="y" value="50"></property>
+</bean>
+
+<bean id="thirdPoint" class="com.csi.spring.Point">
+<property name="x" value="-100"></property>
+<property name="y" value="-500"></property>
+</bean>
+
+</beans>
