@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd" 
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+         xmlns="http://www.springframework.org/schema/beans">
+
+<!-- <bean id="triangle" class="com.csi.autowire.Triangle" autowire="constructor">
+
+</bean>
+
+<bean id="A" class="com.csi.autowire.Point">
+<property name="x" value="10"></property>
+<property name="y" value="20"></property>
+</bean>
+
+<bean id="B" class="com.csi.autowire.Point">
+<property name="x" value="0"></property>
+<property name="y" value="-20"></property>
+</bean>
+
+<bean id="C" class="com.csi.autowire.Point">
+<property name="x" value="100"></property>
+<property name="y" value="200"></property>
+</bean>   -->
+
+<bean id="circle" class="com.csi.constructor.Circle" autowire="constructor">
+
+
+</bean>
+
+<bean id="A" class="com.csi.constructor.Points">
+<constructor-arg value="10" type="int"></constructor-arg>
+<constructor-arg value="100" type="int"></constructor-arg>
+</bean>
+
+<!-- <bean id="B" class="com.csi.constructor.Points">
+<constructor-arg value="100" type="int"></constructor-arg>
+<constructor-arg value="-100" type="int"></constructor-arg>
+</bean> -->
+</beans>
